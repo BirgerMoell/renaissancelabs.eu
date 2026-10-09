@@ -456,6 +456,55 @@ h3 {
   border: 1px solid rgba(246, 196, 83, 0.35);
   box-shadow: 0 40px 120px -40px rgba(246, 196, 83, 0.35);
 }
+.yt {
+  position: relative;
+  display: block;
+  aspect-ratio: 16 / 9;
+  background: #04050a;
+  border: 1px solid rgba(246, 196, 83, 0.35);
+  box-shadow: 0 40px 120px -40px rgba(246, 196, 83, 0.35);
+}
+.yt img,
+.yt iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  object-fit: cover;
+}
+.yt .play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: clamp(64px, 9vw, 96px);
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 1px solid var(--gold-bright);
+  background: rgba(8, 11, 23, 0.72);
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+.yt .play::after {
+  content: '';
+  position: absolute;
+  left: 54%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-style: solid;
+  border-width: 0.9em 0 0.9em 1.5em;
+  border-color: transparent transparent transparent var(--gold-bright);
+}
+.yt:hover .play,
+.yt:focus-visible .play {
+  transform: translate(-50%, -50%) scale(1.08);
+  background: rgba(8, 11, 23, 0.9);
+}
+.film-two {
+  margin-top: clamp(72px, 11vw, 150px);
+  padding-top: clamp(48px, 7vw, 96px);
+  border-top: 1px solid rgba(246, 196, 83, 0.3);
+}
 figcaption {
   margin-top: 16px;
   color: rgba(245, 237, 217, 0.6);
