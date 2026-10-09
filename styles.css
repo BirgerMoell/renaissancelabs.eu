@@ -449,13 +449,6 @@ h3 {
 .player {
   margin-top: clamp(32px, 5vw, 64px);
 }
-.player video {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  background: #04050a;
-  border: 1px solid rgba(246, 196, 83, 0.35);
-  box-shadow: 0 40px 120px -40px rgba(246, 196, 83, 0.35);
-}
 .yt {
   position: relative;
   display: block;
