@@ -34,7 +34,7 @@
 
     <header class="bar">
       <a class="brand" href="#top" aria-label="Renaissance Labs, home">
-        <img src="assets/mark.png" alt="" width="36" height="36" />
+        <img src="assets/mark.png" alt="" width="28" height="28" />
         <span>Renaissance Labs</span>
       </a>
       <nav aria-label="Sections">
@@ -47,75 +47,78 @@
 
     <main id="top">
       <section class="hero">
-        <div class="axis" aria-hidden="true"></div>
-        <img class="mark" src="assets/mark.png" alt="The Renaissance Labs mark: a four-point star inside overlapping circles" width="900" height="900" />
-        <p class="wordmark">Renaissance Labs</p>
-        <h1>Renaissance is a <em>state of mind.</em></h1>
+        <div class="emblem">
+          <svg class="orrery" viewBox="-500 -500 1000 1000" aria-hidden="true">
+            <g class="axes">
+              <line x1="-500" y1="0" x2="500" y2="0" />
+              <line x1="0" y1="-500" x2="0" y2="500" />
+              <line x1="-354" y1="-354" x2="354" y2="354" />
+              <line x1="-354" y1="354" x2="354" y2="-354" />
+            </g>
+            <circle class="ring" r="250" />
+            <circle class="ring faint" r="330" />
+            <circle class="ring dashed spin" r="290" />
+            <circle class="ring ticks spin-back" r="410" />
+            <circle class="ring faint" r="470" />
+            <g class="spin">
+              <circle class="node" cx="0" cy="-330" r="4" />
+              <circle class="node" cx="330" cy="0" r="2.5" />
+              <circle class="node" cx="0" cy="330" r="4" />
+              <circle class="node" cx="-330" cy="0" r="2.5" />
+            </g>
+          </svg>
+          <img class="mark" src="assets/mark.png" alt="The Renaissance Labs mark: a four-point star inside overlapping circles" width="900" height="900" />
+        </div>
+        <h1>Renaissance is a state of mind.</h1>
         <p class="lede">A European lab for a second renaissance. We train sovereign AI models, and we make the case that Europe can build again.</p>
         <p class="actions">
           <a class="btn solid" href="#film">Watch the films</a>
           <a class="btn" href="#premise">Read the premise</a>
         </p>
-        <p class="fig hero-fig" aria-hidden="true">Fig. 1 — Europe, right now</p>
       </section>
 
-      <section id="premise" class="band">
-        <p class="fig reveal">I — The premise</p>
-        <div class="cols">
-          <h2 class="reveal">Not a postcard.<br />Not a souvenir.</h2>
-          <div class="prose reveal">
-            <p>In 1420 a goldsmith with no training as an architect began a dome that the experts of his city had called impossible. He built it without scaffolding. Nobody announced a golden age first. A few people decided to start.</p>
-            <p>Europe has since learned to treat its renaissance as somewhere to visit: roped off, ticketed, behind glass. We think it is something you do. The first one came from workshops where art, science and craft shared a bench, and from people who assumed they were allowed to try.</p>
-            <p>The tools have changed. The assumption is the part worth rebuilding.</p>
+      <section id="premise" class="section wrap">
+        <p class="label">Premise</p>
+        <div class="body">
+          <h2>The renaissance is a decision.</h2>
+          <div class="prose">
+            <p>In 1420 a goldsmith with no training as an architect agreed to build a dome that the experts of Florence had called impossible. Nobody gave him permission to be that ambitious. He gave it to himself.</p>
+            <p>That is what a renaissance is: a way of standing in the world. Curious about everything, unafraid to start, willing to be a beginner again. The painters, engineers and printers of fifteenth-century Europe were not a different kind of person. They simply assumed that one life was big enough for art, science and craft at once.</p>
+            <p>You have the same permission, and better tools than any Medici could pay for. What is usually missing is not ability. It is the belief that you are allowed to try.</p>
+            <p>So try. Pick up the thing you were told you were not a person for. Make something nobody has asked for yet. Become the fullest version of yourself, and bring people with you. A continent changes the same way a person does.</p>
           </div>
         </div>
-        <blockquote class="pull reveal">
-          <p>Rebirth is a verb.</p>
-        </blockquote>
       </section>
 
-      <section id="work" class="band">
-        <p class="fig reveal">II — The work</p>
-        <h2 class="reveal narrow">Two things, on purpose.</h2>
-        <div class="cards">
-          <article class="card reveal">
-            <p class="num">01</p>
-            <h3>Sovereign models</h3>
-            <p>We work on AI models trained in Europe, on European terms: our data, our languages, our infrastructure. Intelligence is becoming infrastructure, and a continent should not have to rent its thinking.</p>
-            <ul>
-              <li>Our data</li>
-              <li>Our languages</li>
-              <li>Our models</li>
-            </ul>
-          </article>
-          <article class="card reveal">
-            <p class="num">02</p>
-            <h3>A state of mind</h3>
-            <p>Capability is not enough if people do not believe they are allowed to use it. So we also make things that change the mood: films, songs, essays and arguments for a Europe that builds.</p>
-            <ul>
-              <li>Films and music</li>
-              <li>Writing</li>
-              <li>Open workshops</li>
-            </ul>
-          </article>
+      <section id="work" class="section wrap">
+        <p class="label">Work</p>
+        <div class="body">
+          <div class="pair">
+            <article>
+              <h3>Sovereign models</h3>
+              <p>We work on AI models trained in Europe, on European terms: our data, our languages, our infrastructure. Intelligence is becoming infrastructure, and a continent should not have to rent its thinking.</p>
+            </article>
+            <article>
+              <h3>A state of mind</h3>
+              <p>Capability is not enough if people do not believe they are allowed to use it. So we also make things that change the mood: films, songs, essays and arguments for a Europe that builds.</p>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section id="film" class="night">
-        <div class="band">
-          <p class="fig reveal">III — The films</p>
-          <div class="cols">
-            <h2 class="reveal">Renaissance <em>2.0</em></h2>
-            <p class="prose reveal">Four minutes on a dome, a printing press, a lens, a cookie banner and a kid in a workshop. Every frame is drawn by code.</p>
-          </div>
-          <figure class="player reveal">
-            <a class="yt" href="https://youtu.be/ULEemP3N8mQ" data-yt="ULEemP3N8mQ" aria-label="Play Renaissance 2.0">
-              <img src="assets/poster.jpg" alt="" width="1280" height="720" loading="lazy" />
-              <span class="play" aria-hidden="true"></span>
-            </a>
-            <figcaption>Renaissance 2.0 · 4:06 · Song made with Suno · Animation written in TypeScript with Claude, rendered frame by frame · Plays from YouTube</figcaption>
-          </figure>
-          <details class="lyrics reveal">
+      <section id="film" class="section wrap">
+        <p class="label">Films</p>
+        <div class="body">
+          <div class="pair films">
+            <article>
+              <a class="yt" href="https://youtu.be/ULEemP3N8mQ" data-yt="ULEemP3N8mQ" aria-label="Play Renaissance 2.0">
+                <img src="assets/poster.jpg" alt="" width="1280" height="720" loading="lazy" />
+                <span class="play" aria-hidden="true"></span>
+              </a>
+              <h3>Renaissance 2.0</h3>
+              <p>Four minutes on a dome, a printing press, a lens, a cookie banner and a kid in a workshop. Every frame is drawn by code.</p>
+              <p class="meta">4:06 · Song made with Suno · Animation written in TypeScript with Claude</p>
+              <details class="lyrics">
             <summary>Lyrics</summary>
             <div class="verses">
               <p><i>Florence, fourteen-twenty.<br />They said the dome could not be built.<br />He built it anyway.</i></p>
@@ -131,68 +134,70 @@
               <p><i>Europe, right now.<br />They say it can’t be built.<br />Hand me the bricks.</i></p>
             </div>
           </details>
-          <div class="film-two">
-            <div class="cols">
-              <h2 class="reveal">Renaissance <em>Man</em></h2>
-              <p class="prose reveal">In 1482 Leonardo applied for a job with a list of ten war machines and one last line: “Also, I can paint.” The second film is about that line, and about the notebook anyone can open.</p>
-            </div>
-            <figure class="player reveal">
-              <a class="yt" href="https://youtu.be/6rvCUg5SeF0" data-yt="6rvCUg5SeF0" aria-label="Play Renaissance Man">
-                <img src="assets/poster-man.jpg" alt="" width="1280" height="720" loading="lazy" />
+            </article>
+            <article>
+              <a class="yt" href="https://youtu.be/X5cpYk0njDI" data-yt="X5cpYk0njDI" aria-label="Play Everybody Needs a Donatello">
+                <img src="assets/poster-don.jpg" alt="" width="1280" height="720" loading="lazy" />
                 <span class="play" aria-hidden="true"></span>
               </a>
-              <figcaption>Renaissance Man · 4:36 · Song made with Suno · Animation written in TypeScript with Claude, rendered frame by frame · Plays from YouTube</figcaption>
-            </figure>
-            <details class="lyrics reveal">
-              <summary>Lyrics</summary>
-              <div class="verses">
-              <p><i>Milan, fourteen eighty-two.<br />A man writes a job application.<br />Ten things he can build for a war.<br />And one line at the bottom:<br />“Also, I can paint.”</i></p>
-              <p>One job title on a lanyard round my neck<br />One lane on the highway, one box to check<br />“I’m not a maths person,” I said at sixteen<br />And I’ve been scrolling my thumb down a five-inch screen</p>
-              <p>School rang a bell and said: choose a side<br />Art on the left and science on the right<br />But the hand that painted that famous smile<br />Drew a heart, a wing and a bridge meanwhile</p>
-              <p>So I bought a notebook, plain, no lines<br />First page says: all of it’s mine</p>
-              <p><b>Renaissance man, it’s a state of mind<br />Paint with the left hand, code with the right<br />A little bit of everything, all of the time<br />Renaissance man, it’s a state of mind<br />Learn it, draw it, build it, try<br />Fail on Monday, Tuesday fly<br />It was never the genius, never the time<br />It’s a state of mind</b></p>
-              <p>Monday I draw my own left hand<br />It looks like a glove full of wet sand<br />Tuesday I solder, I burn my thumb<br />Wednesday the little light finally comes on</p>
-              <p>Thursday I’m learning to say “good day”<br />In a language from two borders away<br />Friday I run to the bridge and back<br />Saturday code, and Sunday Bach</p>
-              <p>There’s a model on my desk that can paint and can rhyme<br />I made it my apprentice, the questions are still mine<br />And the notebook’s fat now, coffee on the lines<br />Last page says: all of it’s mine</p>
-              <p><b>Renaissance man, it’s a state of mind<br />Paint with the left hand, code with the right<br />A little bit of everything, all of the time<br />Renaissance man, it’s a state of mind<br />Learn it, draw it, build it, try<br />Fail on Monday, Tuesday fly<br />It was never the genius, never the time<br />It’s a state of mind</b></p>
-              <p>They’ll say dabbler, they’ll say pick<br />Jack of all trades, they’ll say it quick<br />But nobody asked the dome to choose<br />Between the maths and the art and the view</p>
-              <p>You don’t need genius, you don’t need a throne<br />You need a pencil and one hour alone<br />One by one is how a continent wakes<br />A renaissance is what a person makes</p>
-              <p><b>Renaissance anyone, it’s a state of mind<br />Paint with the left hand, code with the right<br />A little bit of everything, all of the time<br />Renaissance anyone, it’s a state of mind<br />Learn it, draw it, build it, try<br />Fail on Monday, Tuesday fly<br />It was never the genius, never the time<br />It’s a state of mind</b></p>
-              <p><i>Europe, right now.<br />Someone opens a notebook.<br />Page one:<br />“Also, I can…”</i></p>
-              </div>
-            </details>
+              <h3>Everybody Needs a Donatello</h3>
+              <p>In 1401 Brunelleschi lost a competition. His fifteen-year-old friend said: let’s go to Rome. A film about the friend who believes in you first, and about being that friend for someone else.</p>
+              <p class="meta">4:35 · Song made with Suno · Animation written in TypeScript with Claude</p>
+              <details class="lyrics">
+                <summary>Lyrics</summary>
+                <div class="verses">
+                  <p><i>Florence, fourteen-oh-one.<br />A goldsmith enters a competition.<br />He loses.<br />His friend is fifteen.<br />His friend says: let’s go to Rome.</i></p>
+                  <p>They walked into Rome with a spade and a rule<br />And the locals decided: a couple of fools<br />Two boys in the rubble from dawn until dark<br />“Treasure hunters,” they called them, and missed the mark</p>
+                  <p>They weren’t after gold, they were measuring stone<br />A temple, a column, a very large dome<br />They paid for their bread fixing rich people’s rings<br />And spent every evening on ruined old things</p>
+                  <p>One had the plan and one carried the spade<br />And that’s more or less how the whole thing got made</p>
+                  <p><b>Everybody needs a Donatello<br />Not the turtle, the other fellow<br />Someone who hears “I lost” and says “so?<br />Bring a shovel. We’re going to Rome.”<br />Everybody needs a Donatello<br />Tells you it’s bad. Comes back tomorrow.<br />Nobody ever built it alone<br />So go and be somebody’s Donatello</b></p>
+                  <p>Back home, the kid carved a Christ out of wood<br />His friend took one look: “It’s a farmhand. It’s good,<br />but it’s a farmhand.” “Then make one,” he said<br />So he did, in secret, for months, it’s said</p>
+                  <p>Asked him to lunch, sent him on with the food<br />The kid saw the cross and his apron came loose<br />Eggs on the floor, and the cheese, and the lot<br />“You carve the Christs. I’ll carve what I’ve got.”</p>
+                  <p>Then twenty years on, with the dome halfway up<br />He sent bread and thin wine to the men at the top<br />One had the plan, a few hundred the hands<br />And that’s more or less where the whole thing stands</p>
+                  <p><b>Everybody needs a Donatello<br />Not the turtle, the other fellow<br />Someone who hears “I lost” and says “so?<br />Bring a shovel. We’re going to Rome.”<br />Everybody needs a Donatello<br />Tells you it’s bad. Comes back tomorrow.<br />Nobody ever built it alone<br />So go and be somebody’s Donatello</b></p>
+                  <p>They say one man painted that ceiling alone<br />He had a whole crew. It’s the myth that has grown.<br />Me, I’ve got headphones, a door I keep shut<br />A group chat on mute and a plan in a rut</p>
+                  <p>Nine hundred contacts and no one to call<br />So I wrote to a stranger: “This might be small,<br />but I’m stuck on a thing. Do you want to see?”<br />And they wrote back: “Thursday. Bring it to me.”</p>
+                  <p>Twelve painters in Florence, a club and a pot<br />Bring your own dish, and it better be hot<br />One built a church out of sausage and cheese<br />With a choir of roast thrushes, as real as you please</p>
+                  <p>Pasta for hymn sheets, peppercorn notes<br />Nobody there was making history. They joked.<br />So here’s the whole secret, as I understand:<br />A renaissance is a dinner that got out of hand.</p>
+                  <p><b>Everybody needs a Donatello<br />Not the turtle, the other fellow<br />Someone who hears “I lost” and says “so?<br />Bring a shovel. We’re going to Rome.”<br />Everybody needs a Donatello<br />Tells you it’s bad. Comes back tomorrow.<br />Nobody ever built it alone<br />Tonight I’ll be somebody’s Donatello</b></p>
+                  <p><i>Europe, right now.<br />Somebody just lost.<br />Somebody else says:<br />“Let’s go to Rome.”</i></p>
+                </div>
+              </details>
+            </article>
           </div>
         </div>
       </section>
 
-      <section id="precedents" class="band">
-        <p class="fig reveal">IV — Precedents</p>
-        <h2 class="reveal narrow">It has been done here before.</h2>
-        <ol class="timeline">
-          <li class="reveal"><span class="year">1420</span><span class="place">Florence</span><p>A dome 45 metres wide, raised with no scaffold by a goldsmith.</p></li>
-          <li class="reveal"><span class="year">c. 1450</span><span class="place">Mainz</span><p>Movable type. Lead turned into light.</p></li>
-          <li class="reveal"><span class="year">1610</span><span class="place">Padua</span><p>A lens pointed at the sky, and the heavens set right.</p></li>
-          <li class="reveal"><span class="year">1989</span><span class="place">Geneva</span><p>The web, proposed in a lab by a lake and later given away.</p></li>
-          <li class="reveal now"><span class="year">Now</span><span class="place">Europe</span><p>Your turn.</p></li>
-        </ol>
+      <section id="precedents" class="section wrap">
+        <p class="label">Precedents</p>
+        <div class="body">
+          <h2>It has been done here before.</h2>
+          <ol class="timeline">
+            <li><span class="year">1420</span><span class="place">Florence</span><p>A dome 45 metres wide, raised with no scaffold by a goldsmith.</p></li>
+            <li><span class="year">c. 1450</span><span class="place">Mainz</span><p>Movable type. Lead turned into light.</p></li>
+            <li><span class="year">1610</span><span class="place">Padua</span><p>A lens pointed at the sky, and the heavens set right.</p></li>
+            <li><span class="year">1989</span><span class="place">Geneva</span><p>The web, proposed in a lab by a lake and later given away.</p></li>
+            <li class="now"><span class="year">Now</span><span class="place">Europe</span><p>Your turn.</p></li>
+          </ol>
+        </div>
       </section>
 
-      <section id="join" class="band join">
-        <p class="fig reveal">V — Join</p>
-        <h2 class="reveal">Hand me the bricks.</h2>
-        <p class="lede reveal">We are looking for people who would rather build than visit: researchers, engineers, artists and patrons, from Lisbon to Tallinn and from Stockholm to Rome.</p>
-        <p class="actions reveal">
-          <a class="btn solid" href="https://discord.gg/6JUezWZbAm">Join the Discord</a>
-          <a class="btn" href="https://github.com/BirgerMoell/renaissancelabs.eu">Find us on GitHub</a>
-        </p>
+      <section id="join" class="section wrap">
+        <p class="label">Join</p>
+        <div class="body">
+          <h2>Hand me the bricks.</h2>
+          <p class="lede">We are looking for people who would rather build than visit: researchers, engineers, artists and patrons, from Lisbon to Tallinn and from Stockholm to Rome.</p>
+          <p class="actions">
+            <a class="btn solid" href="https://discord.gg/6JUezWZbAm">Join the Discord</a>
+            <a class="btn" href="https://github.com/BirgerMoell/renaissancelabs.eu">Find us on GitHub</a>
+          </p>
+        </div>
       </section>
     </main>
 
-    <footer class="foot">
-      <img src="assets/mark.png" alt="" width="56" height="56" />
-      <p class="wordmark">Renaissance Labs</p>
-      <p class="small foot-links"><a href="https://discord.gg/6JUezWZbAm">Discord</a> · <a href="https://huggingface.co/RenaissanceLabsEU">Hugging Face</a> · <a href="https://www.youtube.com/@birgermoell">YouTube</a> · <a href="https://github.com/BirgerMoell/renaissancelabs.eu">GitHub</a></p>
-      <p class="small">Made in Europe · <span id="year">2026</span></p>
+    <footer class="foot wrap">
+      <p class="brand"><img src="assets/mark.png" alt="" width="22" height="22" /> Renaissance Labs · Made in Europe · <span id="year">2026</span></p>
+      <p class="foot-links"><a href="https://discord.gg/6JUezWZbAm">Discord</a><a href="https://huggingface.co/RenaissanceLabsEU">Hugging Face</a><a href="https://www.youtube.com/@birgermoell">YouTube</a><a href="https://github.com/BirgerMoell/renaissancelabs.eu">GitHub</a></p>
     </footer>
 
     <script src="script.js" defer></script>
